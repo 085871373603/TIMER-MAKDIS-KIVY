@@ -1,0 +1,19 @@
+TIMER MAXDIS KIVY — HASIL PENGUJIAN LOKAL
+
+Pengujian yang dijalankan:
+1. Python compileall untuk main.py, timer_logic.py, services, dan tests.
+2. Unit test pure Python untuk rumus Qty dan pembulatan.
+3. Deadline dan remaining-seconds.
+4. Timer finish idempotent dan rekaman lorong.
+5. Enam lorong dan kalkulasi total Qty, waktu kerja, gap, aktual, target, deviasi.
+6. Shift mapping dan format durasi.
+7. Atomic save/load dan recovery dari JSON rusak.
+8. Kelengkapan file aset, parse Buildozer config, parse XML manifest, dan workflow CI.
+
+Keterbatasan pengujian:
+- Kivy dan Buildozer tidak terpasang di lingkungan pembuatan ini.
+- APK belum dibangun di Android SDK/NDK pada mesin ini.
+- Foreground service, custom notification channel/icon, MediaPlayer, WakeLock, dan lifecycle Android belum dapat diverifikasi pada HP fisik.
+- GitHub Actions workflow disertakan untuk menjalankan unit test dan build APK. Setelah APK selesai, uji wajib pada perangkat: layar mati, Home/app switch, swipe Recent Apps, izin notifikasi, volume alarm, dan pembatasan baterai.
+
+Tidak ada klaim bahwa APK sudah berhasil dibangun atau diuji di perangkat nyata.

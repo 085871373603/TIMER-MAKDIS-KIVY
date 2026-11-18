@@ -1,0 +1,18 @@
+TIMER MAXDIS KIVY - TEST REPORT
+
+LOCAL TESTS
+- Python compileall: PASS
+- Unit tests: 13 PASS / 0 FAIL
+- Buildozer configuration parsing: PASS
+- Android manifest XML fragment parse: PASS
+- Required app/service/icon/audio files: PASS
+- Custom notification channel Java source compile against minimal Android API stubs: PASS
+
+NOT TESTED IN THIS ENVIRONMENT
+- Full Buildozer APK compilation with Android SDK/NDK
+- Kivy rendering on Android device/emulator
+- Real Android notification drawer visibility on OEM firmware
+- Foreground service process lifetime and sticky recovery on physical hardware
+- MediaPlayer and partial WakeLock behavior with the phone locked
+
+The included GitHub Actions workflow repeats Python tests and performs the Android APK build. A real-device acceptance test remains required before operational use.
