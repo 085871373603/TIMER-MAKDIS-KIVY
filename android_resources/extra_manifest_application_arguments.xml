@@ -1,0 +1,10 @@
+<service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="id.arinex.timermaxdis.ServiceTimer"
+    android:foregroundServiceType="specialUse"
+    tools:node="merge">
+    <property
+        android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+        android:value="User-started store-lane countdown timer that remains active while the user leaves the app or locks the screen and plays its completion alarm." />
+</service>
